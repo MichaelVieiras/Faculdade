@@ -1,4 +1,5 @@
 Questão 1: 
+
 A empresa de Ônibus BUSBUS oferece várias rotas de seus ônibus aos passageiros. Diariamente a gerência de suprimentos calcula quanto de combustível é necessário para que os ônibus consigam efetuar suas rotas diariamente.
 
 Isso tudo é calculado através de planilhas excel que precisam ser modernizadas. Você como desenvolvedor precisa desenvolver um programa em Java que faça a leitura de quantas rotas serão realizadas no dia. Após a quantidade de rotas, faça a leitura de quantos km cada um dos ônibus vai percorrer.
