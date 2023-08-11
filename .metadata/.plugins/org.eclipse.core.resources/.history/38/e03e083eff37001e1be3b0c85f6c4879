@@ -1,0 +1,32 @@
+package onibusbusbus;
+
+import javax.swing.JOptionPane;
+
+public class Rota {
+	public void planejarDia() {
+		int quantidadeRotas = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de rotas do dia: "));
+		double totalKm = 0;
+
+		for (int i = 1; i <= quantidadeRotas; i++) {
+			double kmRota = Double.parseDouble(JOptionPane.showInputDialog("Digite a km percorrida na rota " + i + ": "));
+			totalKm += kmRota;
+		}
+
+		double mediaConsumo = 2.5;
+		double quantidadeCombustivel = totalKm / mediaConsumo;
+
+		double valorLitroDiesel = Double
+				.parseDouble(JOptionPane.showInputDialog("Digite o valor do litro do óleo diesel: "));
+		double valorTotal = valorLitroDiesel * quantidadeCombustivel;
+
+		String mensagem = "Total de km percorridos: " + totalKm + " km\n"
+				+ "Quantidade de litros de combustível necessário: " + quantidadeCombustivel + " litros\n"
+				+ "Valor total a ser desembolsado: R$ " + valorTotal;
+
+		JOptionPane.showMessageDialog(null, mensagem);
+
+		System.out.println("Total de km percorridos: " + totalKm + " km");
+		System.out.println("Quantidade de litros de combustível necessário: " + quantidadeCombustivel + " litros");
+		System.out.println("Valor total a ser desembolsado: R$ " + valorTotal);
+	}
+}

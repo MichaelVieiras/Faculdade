@@ -1,0 +1,9 @@
+package rotacerta;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Rota rota = new Rota();
+        r.planejarDia();
+    }
+}
