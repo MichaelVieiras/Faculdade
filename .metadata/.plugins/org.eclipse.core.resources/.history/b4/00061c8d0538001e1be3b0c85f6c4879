@@ -1,8 +1,0 @@
-package onibusbusbus;
-
-import java.lang.annotation.Documented;
-
-@Documented
-public @interface Questão_1 {
-
-}
